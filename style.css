@@ -1,0 +1,310 @@
+body{
+    background-image: url("sitpbg.jpg");
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+   box-sizing:border-box;
+   background-size: cover; 
+   /* background-position: 1080 1920; */
+   background-repeat: no-repeat;
+   position: fixed;
+   
+
+}
+ 
+.bg {
+    margin-top: -36.2px;
+    background-color: #9f3906;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    /* box-shadow: black; */
+    box-shadow: 0px 0px 20px #000000;
+    width: 1585px;
+    height: 80px;
+    
+}
+
+.text {
+    color: hsl(0, 61%, 93%);
+    padding-top: 13px;
+    font-size: 55px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 2px 3px 3px #391b0198;
+}
+
+.sit {
+    width: 70px;
+    height: 70px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 140px;
+    margin-bottom: 5px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px; 
+    float: left;
+    box-shadow: 2px 5px 5px #391b0198;
+} 
+
+.bottom{
+    float: right;
+    margin-top: 128px;
+    /* font-family: "Neucha", cursive; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    color: #21201fbf;
+    text-shadow: 1px 0px 1px #391b0198;
+}
+
+.chat-container {
+    width: 600px;
+    height: 530px;
+    margin:50px auto;
+    border: 1px solid #f6eaea;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #03030374;
+    background-color: rgb(252, 245, 245);
+    margin-bottom: -65px;
+}
+
+.message {
+    padding: 10px;
+    margin: 10px 5px 5px 5px;
+    font-family: 'AR One Sans', sans-serif;
+    font-family: 'Bungee', sans-serif;
+    font-family: 'Onest', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.suggestions {
+    position: absolute;
+    background-color: #ec9a713a;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 200px 10px 0px 276px;
+    z-index: 10;
+    box-shadow: 0px 0px 10px 0px;
+}
+
+.suggestions div {
+    cursor:pointer;
+    color: #311212; 
+    text-shadow: 2px 1px 5px #391b0198;
+}
+
+
+.user {
+    background-color: #b53904; 
+    color: aliceblue;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.bot {
+    background-color: #f8ded1; 
+    color: rgb(94, 69, 69);
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+.chat-header {
+    background-color: #ed7437;
+    color: rgb(249, 249, 249);
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px 10px 0 0;
+    font-family: 'Bungee', sans-serif;
+    text-shadow: 2px 2px 2px #9f4c15e4;
+}
+
+.chat-log {
+    height: 400px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    border-radius: 0 0 5px 5px;
+    white-space:pre-line;
+}
+
+#user-input {
+    width: 96.1%;
+    padding: 5px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 5px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #ed7437; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 6px 10px; 
+    border-radius: 10px;
+    margin: 10px 0px 0px 4px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#suggestionButton {
+    background-color: #ed7437; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 6px 10px; 
+    border-radius: 10px;
+    margin: 10px 0px 0px 4px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#suggestionButton:active {
+    background-color: #bf3939;
+    transform: scale(0.95);
+}
+
+#ratebtn {
+    background-color: #ed7437; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 6px 10px; 
+    border-radius: 10px;
+    margin: 10px 0px 0px 4px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+#contactbtn {
+    background-color: #ed7437; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 6px 10px; 
+    border-radius: 10px;
+    margin: 10px 0px 0px 4px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+#ratebtn:hover {
+    transform: scale(1.05);
+}
+
+#ratebtn:active {
+    background-color: #bf3939;
+    transform: scale(0.95);
+}
+#contactbtn:hover {
+    transform: scale(1.05);
+}
+
+#contactbtn:active {
+    background-color: #bf3939;
+    transform: scale(0.95);
+}
+
+
+.emoji-menu {
+    display:none;
+    position: absolute;
+    padding: 5px 15px 5px 15px;
+    border-radius: 35px;
+    text-shadow: 2px 3px 3px #391b0198;
+
+}
+
+.show{
+    display:block;
+    bottom: 66.6px;
+    left: 250px;
+    background-color: #ec9a713a;
+    border-radius: 20px;
+    padding: 5px 15px 5px 15px;
+  }
+ 
+ .contact-menu{
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    left: 20;
+    margin-left: 160px;
+    margin-bottom: 0px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    text-shadow: 3px 2px 5px #391b0198;
+
+ } 
+
+ .show {
+    display:block;
+    left: 420px;
+    bottom: 33px;
+    /* bottom: 55px; */
+    position: fixed;
+  }
+
+input[type="button"]:hover {
+    transform: scale(1.05);
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.05);
+}
+
+
+input[type="submit"]:active {
+    background-color: #bf3939;
+    transform: scale(0.95);
+    
+}
+
+#clear-chat-button {
+    background-color: #ed7437;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    transition: background-color 0.3s, transform 0.3s;
+    
+}
+
+#clear-chat-button:hover {
+    transform: scale(1.05);
+}
+
+#clear-chat-button:active {
+    background-color: #ed5454;
+    transform: scale(0.95);
+}
+
+.feedbackmsg {
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-right: 5px;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}

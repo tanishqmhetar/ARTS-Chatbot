@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Honk&family=Nabla&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Honk:MORF,SHLN@0,64&family=Nabla&family=Neucha&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Honk:MORF,SHLN@0,64&family=Nabla&family=Neucha&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Honk:MORF,SHLN@0,64&family=Lobster&family=Madimi+One&family=Nabla&family=Neucha&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+<div class="bg">
+        <img src="sit.png.jpg" class="sit">
+        <h1 class="text">
+        Sharad Institute Of Technology Polytechnic, Yadrav
+        </h1>
+    </div>       
+
+
+    <div class="chat-container">
+        <div class="chat-header">
+            
+            A R T S ' s 
+        </div>
+        <div class="chat-log" id="chat-log">
+                
+        </div>
+
+        <form onsubmit="askQuestion(); return false;">
+            <div class="input-container">
+                <input type="text" id="user-input" placeholder="Type your question...">
+                <input type="submit" value="➤">
+                <input type="button" id="suggestionButton" value="💡">
+            </div>
+        </form>
+        <div class="feedback-container">
+            
+            <button id="clear-chat-button">Clear Chat</button>
+            <button id="ratebtn">Rate</button>
+            <button id="contactbtn">Contact</button>
+            <div id="emoji-menu" class="emoji-menu">
+                <span class="emoji" onclick="selectEmoji('😓')">😓</span>
+                <span class="emoji" onclick="selectEmoji('😒')">😒</span>
+                <span class="emoji" onclick="selectEmoji('😕')">😕</span>
+                <span class="emoji" onclick="selectEmoji('😁')">😁</span>
+                <span class="emoji" onclick="selectEmoji('🤩')">🤩</span>
+            </div>
+            <div id="contact-menu" class="contact-menu">
+                <span>Email: teamstar.mp4@gmail.com</span>
+            </div>
+
+        </div>
+    </div>
+    <div class="bottom">
+        <h2>A chatbot dedicated to SITP...</h2>
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+</html>
